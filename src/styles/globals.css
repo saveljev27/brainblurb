@@ -42,9 +42,3 @@ textarea {
 .poppup-title {
   @apply text-3xl text-footer-title font-text tracking-title font-semibold break-words text-balance max-md:text-2xl;
 }
-
-@media screen and (max-width: 394px) {
-  .social-links {
-    @apply flex flex-col;
-  }
-}

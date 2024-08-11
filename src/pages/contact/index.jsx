@@ -25,15 +25,16 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen">
-      <main className="flex relative flex-col items-center px-20 pb-16 w-full min-h-[484px] max-md:px-8 max-md:mt-10 max-md:max-w-full">
-        <Image
-          loading="lazy"
-          src={mainwave}
-          alt="Main"
-          className="object-cover absolute inset-0 size-full"
-          style={{ top: '87px', zIndex: '-1' }}
-        />
+    <div className="min-h-screen relative overflow-hidden">
+      <main className="flex flex-col items-center px-20 pb-16 w-full min-h-[484px] max-md:px-8 max-md:mt-10 max-md:max-w-full">
+        <div
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: `url(${mainwave.src})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        ></div>
         <div className="flex relative flex-col items-center mt-0 w-full max-w-[1039px] max-md:max-w-full ">
           <section className="w-full">
             <h1 className="text-title/[96px] text-footer-title font-semibold font-text break-words max-md:text-4xl/[0px]">
