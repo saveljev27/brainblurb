@@ -37,43 +37,42 @@ export default function NewsletterSignup() {
         className="flex self-start mt-12 max-md:mt-10"
         onSubmit={handleSubmit}
       >
-        <div className="flex flex-col">
-          <label
-            htmlFor="email"
-            className="max-xs:text-[10px] whitespace-nowrap"
-          >
+        <div className="flex flex-col w-full max-w-[400px]">
+          <label htmlFor="email" className=" whitespace-nowrap">
             Sign up for events and announcements
           </label>
-          <div className="flex mt-4 rounded-l bg-white min-h-[50px] max-w-[350px]">
+          <div className="flex mt-4 rounded bg-white min-h-[50px] overflow-hidden w-full max-xs:flex-col max-xs:items-stretch">
             <input
               type="email"
               id="email"
               name="email"
-              className="w-full h-full px-3 rounded-l"
+              className="flex-grow px-3 border-none outline-none max-xs:pt-3"
               placeholder="Enter your e-mail address here"
               aria-label="Enter your e-mail address here"
               required
+              style={{ minWidth: '275px', flexBasis: 'auto', flexGrow: 1 }}
             />
+            <button
+              type="submit"
+              className="flex justify-center items-center bg-newsletter-btn w-[45px] h-[50px] border-none max-xs:mt-4 max-xs:w-full max-xs:h-auto"
+            >
+              <Image
+                loading="lazy"
+                src={sendIcon}
+                alt="Submit"
+                width={30}
+                height={30}
+                className="max-w-full max-h-full"
+              />
+            </button>
           </div>
+
           {statusText && (
             <div className="bg-primary-cyan text-white font-text p-2 mt-2 rounded ">
               {statusText}
             </div>
           )}
         </div>
-        <button
-          type="submit"
-          className="flex justify-center items-center bg-newsletter-btn mt-4 rounded-r w-[45px] h-[50px] "
-        >
-          <Image
-            loading="lazy"
-            src={sendIcon}
-            alt="Submit"
-            width={30}
-            height={30}
-            className="max-w-full max-h-full"
-          />
-        </button>
       </form>
     </>
   );
