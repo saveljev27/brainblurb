@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label {
+  @apply text-footer-title text-sm/[0px] font-text font-semibold break-words;
+}
+
+input,
+textarea {
+  @apply text-footer-gray font-normal font-text text-base tracking-tightester break-words;
+}
+
+.nav-text {
+  @apply text-nav-cyan text-base/[20px] font-medium font-text text-nowrap;
+}
+
+.card-text {
+  @apply text-primary-cyan text-xl font-normal font-text leading-7 tracking-tightest break-words;
+}
+
+.button {
+  @apply px-4 py-2 text-base/[20px] font-medium text-white break-words bg-primary-cyan rounded-lg font-text;
+}
+
+.footer-text {
+  @apply text-footer-gray text-base font-text font-medium underline break-words;
+}
+
+.footer-title {
+  @apply text-footer-title text-xl font-text font-normal tracking-tightest break-words;
+}
+
+.poppup-title {
+  @apply text-3xl text-footer-title font-text tracking-title font-semibold break-words text-balance max-md:text-2xl;
+}
+
+@media screen and (max-width: 394px) {
+  .social-links {
+    @apply flex flex-col;
+  }
+}
