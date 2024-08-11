@@ -49,8 +49,8 @@ export default function NewsletterSignup() {
               className="flex-grow px-3 border-none outline-none max-xs:pt-3"
               placeholder="Enter your e-mail address here"
               aria-label="Enter your e-mail address here"
-              required
               style={{ minWidth: '275px', flexBasis: 'auto', flexGrow: 1 }}
+              required
             />
             <button
               type="submit"
@@ -67,7 +67,7 @@ export default function NewsletterSignup() {
             </button>
           </div>
 
-          {statusText && (
+          {statusText && setTimeout(() => setStatusText(''), 3000) && (
             <div className="bg-primary-cyan text-white font-text p-2 mt-2 rounded ">
               {statusText}
             </div>

@@ -59,7 +59,7 @@ export default function Contact() {
                   className="flex overflow-hidden justify-start flex-col mt-8 rounded-lg p-12 bg-footer-lightblue max-w-[687px] max-md:px-8 max-md:py-9"
                   onSubmit={handleSubmit}
                 >
-                  {statusText && (
+                  {statusText && setTimeout(() => setStatusText(''), 3000) && (
                     <div className="bg-primary-cyan text-white font-text p-2 rounded ">
                       {statusText}
                     </div>
