@@ -10,6 +10,19 @@
   box-sizing: border-box;
 }
 
+.header-background {
+  background-image: url('/public/assets/clouds.svg');
+  background-size: cover;
+  background-position: center;
+  height: 265px; /* Высота для десктоп версии */
+}
+
+@media (max-width: 768px) {
+  .header-background {
+    height: 180px; /* Высота для мобильных устройств */
+  }
+}
+
 label {
   @apply text-footer-title text-sm/[0px] font-text font-semibold break-words;
 }
