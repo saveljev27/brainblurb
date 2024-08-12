@@ -41,20 +41,19 @@ export default function NewsletterSignup() {
           <label htmlFor="email" className=" whitespace-nowrap">
             Sign up for events and announcements
           </label>
-          <div className="flex mt-4 rounded bg-white min-h-[50px] overflow-hidden w-full max-xs:flex-col max-xs:items-stretch">
+          <div className="flex mt-4 rounded bg-white min-h-[50px] overflow-hidden w-full max-xs:w-[260px]">
             <input
               type="email"
               id="email"
               name="email"
-              className="flex-grow px-3 border-none outline-none max-xs:pt-3"
+              className="flex-grow px-3 border-none outline-none min-w-[275px] max-xs:min-w-[200px]"
               placeholder="Enter your e-mail address here"
               aria-label="Enter your e-mail address here"
-              style={{ minWidth: '275px', flexBasis: 'auto', flexGrow: 1 }}
               required
             />
             <button
               type="submit"
-              className="flex justify-center items-center bg-newsletter-btn w-[45px] h-[50px] border-none max-xs:mt-4 max-xs:w-full max-xs:h-auto"
+              className="flex justify-center items-center bg-newsletter-btn w-[45px] h-[50px] border-none"
             >
               <Image
                 loading="lazy"

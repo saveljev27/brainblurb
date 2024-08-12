@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="flex gap-28 mt-6 max-md:flex-col md:self-end max-md:gap-6">
             <div className="flex flex-col">
               <h2 className="footer-title">Social</h2>
-              <div className="flex flex-col max-md:flex-row max-md:gap-5 social-links max-xs:flex-col max-xs:gap-0">
+              <div className="flex flex-col max-md:flex-row max-md:gap-5 social-links">
                 {socialLinks.map((link, index) => (
                   <Link
                     key={index}
