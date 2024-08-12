@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import FeatureCard from './FeatureCard';
@@ -19,7 +18,7 @@ export default function MainContent() {
           }}
         ></div>
         <div className="flex z-10 relative flex-col items-center mt-0 w-full max-w-[1039px] max-md:max-w-full ">
-          <div className="grid grid-cols-1  gap-x-96 gap-y-10 justify-items-center align-items-center justify-content-center align-content-center w-full max-w-[1039px] mx-auto md:grid-cols-2">
+          <div className="grid grid-cols-1  gap-x-96 gap-y-10 justify-items-center align-items-center justify-content-center align-content-center w-full max-w-[1039px] mx-auto max-lgpro:gap-y-16 lgpro:grid-cols-2">
             {features.map((feature, index) => (
               <FeatureCard
                 key={index}
