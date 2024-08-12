@@ -19,9 +19,6 @@ module.exports = {
         text: ['Montserrat', 'sans-serif'],
         heading: ['Rubik', 'sans-serif'],
       },
-      fontSize: {
-        title: '80px',
-      },
       letterSpacing: {
         tightest: '0.1px',
         tightester: '0.16px',
@@ -29,6 +26,7 @@ module.exports = {
       },
       screens: {
         xs: '390px',
+        lgpro: '1025px',
       },
     },
   },
